@@ -1,3 +1,11 @@
 @import "fonts";
 @import "vars";
 @import "defaults";
+
+@import "./templates/header";
+
+@import "./templates/about";
+@import "./templates/recentPosts";
+@import "./templates/featuredWorks";
+
+@import "./templates/footer";

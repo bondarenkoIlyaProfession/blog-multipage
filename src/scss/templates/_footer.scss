@@ -1,0 +1,22 @@
+.footer {
+  padding: 50px 0;
+
+  .social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .list__img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+}

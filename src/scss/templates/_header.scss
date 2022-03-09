@@ -1,0 +1,30 @@
+.header {
+  padding-top: 30px;
+
+  &-inner {
+    width: 1300px;
+    margin: 0 auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      width: 300px;
+    }
+
+    &__link {
+      transition: var(--average-transition);
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 29px;
+
+      &-active {
+        color: var(--primary);
+      }
+    }
+  }
+}
