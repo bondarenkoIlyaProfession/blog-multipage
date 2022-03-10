@@ -13,9 +13,9 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <ul className="social-media">
-        {socialLinks && socialLinks.map(({ img }) => {
+        {socialLinks && socialLinks.map(({ img }, index) => {
           return (
-            <li className="list">
+            <li className="list" key={index}>
               <a href="#top" className="list__item">
                 <img src={img} alt="Social Link" className="list__img" />
               </a>

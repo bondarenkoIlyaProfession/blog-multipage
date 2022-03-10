@@ -1,5 +1,10 @@
 # Multipage blog using React JS
 
+![alt text](src/assets/screenshots/home-screen.png "Home page")
+![alt text](src/assets/screenshots/works-screen.png "Works page")
+![alt text](src/assets/screenshots/blog-screen.png "Blog page")
+![alt text](src/assets/screenshots/work-details-screen.png "Work Detail page")
+
 ## Available Scripts
 
 In the project directory, you can run:

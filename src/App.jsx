@@ -10,13 +10,15 @@ export const App = () => {
   return (
     <>
       <Header />
-      <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/works" element={<Works />} />
-        <Route path="/work-detail" element={<WorkDetail />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <div className="content">
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/works" element={<Works />} />
+          <Route path="/work-detail" element={<WorkDetail />} />
+          <Route path="*" element={<Error />} />
+        </Routes>
+      </div>
       <Footer />
     </>
   )

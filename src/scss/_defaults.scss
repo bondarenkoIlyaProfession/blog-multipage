@@ -6,9 +6,15 @@
   margin: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: var(--primary-font);
   color: var(--dark);
+  min-height: 100%;
+  position: relative;
 }
 
 a {
@@ -20,6 +26,10 @@ li {
   list-style: none;
 }
 
+.content {
+  padding-bottom: 150px;
+}
+
 .container {
   max-width: 1030px;
   margin: 0 auto;
@@ -27,4 +37,9 @@ li {
 
 .line {
   border: 1px solid var(--chinese-white);
+}
+
+.vertical-line {
+  border: 1px solid var(--dark);
+  height: 20px;
 }

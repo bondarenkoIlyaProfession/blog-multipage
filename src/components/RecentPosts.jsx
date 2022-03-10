@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const recentPosts = [
   {
@@ -29,15 +30,15 @@ export const RecentPosts = () => {
           {recentPosts && recentPosts.map(({ title, date, topic, description }, index) => {
             return (
               <li className="list__item" key={index}>
-                <a className="list__link" href="#top">
+                <Link className="list__link" to="/work-detail">
                   <h4 className="list__item_title">{title}</h4>
                   <div className="list__item_info">
                     <div className="list__item_date">{date}</div>
-                    <div className="list__item_vertical-line"></div>
+                    <div className="list__item_vertical-line vertical-line"></div>
                     <div className="list__item_topic">{topic}</div>
                   </div>
                   <div className="list__item_description">{description}</div>
-                </a>
+                </Link>
               </li>
             )
           })}

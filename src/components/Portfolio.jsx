@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 import { Link } from "react-router-dom";
 
 import dashboard from "../assets/images/dashboard.png";
 import illustration from "../assets/images/illustration.png";
 import typography from "../assets/images/typography.png";
+import components from "../assets/images/components.png";
 
-export const FeaturedWorks = () => {
-
-  const featuredWorks = [
+export const Portfolio = () => {
+  const portfolio = [
     {
       title: "Designing Dashboards",
       date: "2022",
@@ -29,15 +29,23 @@ export const FeaturedWorks = () => {
       description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
       img: typography,
     },
+    {
+      title: "Components",
+      date: "2018",
+      topic: "Components, Design",
+      description: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      img: components,
+    },
   ]
 
   return (
-    <section className="featured-works">
+    <section className="portfolio">
       <div className="container">
-        <div className="featured-works__title">Featured works</div>
+        <h1 className="portfolio__title">Works</h1>
 
-        <ul className="featured-works__list">
-          {featuredWorks && featuredWorks.map(({ title, date, topic, description, img }, index) => {
+
+        <ul className="portfolio__list">
+          {portfolio && portfolio.map(({ title, date, topic, description, img }, index) => {
             return (
               <li className="list__item" key={index}>
                 <Link className="list__link" to="/work-detail">

@@ -5,7 +5,15 @@
 @import "./templates/header";
 
 @import "./templates/about";
-@import "./templates/recentPosts";
+@import "./templates/recentPosts"; // Home page
 @import "./templates/featuredWorks";
+
+@import "./templates/posts"; // Blog page
+
+@import "./templates/portfolio"; // Works page
+
+@import "./templates/dashboardDetail"; // WorkDetail page
+
+@import "./templates/error";
 
 @import "./templates/footer";
